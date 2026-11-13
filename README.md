@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chido Designs AI portfolio
 
-## Getting Started
+An AI-focused portfolio foundation built with Next.js 14, the App Router,
+TypeScript, Tailwind CSS, Framer Motion, and Lucide React.
 
-First, run the development server:
+## Getting started
+
+Install dependencies and start the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). The hero, project cards,
+About page, and contact page are in place; dedicated skills and experience
+sections have not yet been built. Edit `app/about/page.tsx` to update the About
+story and `app/contact/page.tsx` to update contact details.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit `data/projects.ts` to replace the example concepts with real projects and
+add their `demoUrl` and `githubUrl` links. Missing links are shown as coming
+soon. Replace `public/chido-ukaigwe-cv.pdf` to update the publicly downloadable
+CV.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Theme tokens live in `tailwind.config.ts` and `app/globals.css`. Geist fonts
+are bundled locally through `next/font` in `app/layout.tsx`.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run `npm run lint` and `npm run build` to validate changes. Next.js 14 is
+outside its supported lifecycle, and the dependency audit reports
+vulnerabilities. Review `npm audit` and upgrade to a supported Next.js version
+before deploying to production.
