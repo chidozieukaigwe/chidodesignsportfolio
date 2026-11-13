@@ -21,7 +21,7 @@ export default function Home() {
                 and intelligent workflows.
               </p>
             </div>
-            <p className="text-xs text-slate-400">Example projects · Coming soon</p>
+            <p className="text-xs text-slate-400">Featured work</p>
           </div>
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (

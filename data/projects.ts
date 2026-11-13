@@ -5,29 +5,19 @@ export interface Project {
   stack: string[];
   demoUrl?: string;
   githubUrl?: string;
+  caseStudyUrl?: string;
+  featured?: boolean;
 }
 
-// Replace these examples and add real URLs when the projects are ready.
-export const projects: Project[] = [
-  {
-    title: "Knowledge Retrieval Assistant",
-    category: "Retrieval augmented generation",
-    description:
-      "A RAG application concept for finding relevant answers across a collection of documents.",
-    stack: ["Python", "LangChain", "Pinecone", "OpenAI"],
-  },
-  {
-    title: "AI Research Agent",
-    category: "Autonomous agents",
-    description:
-      "An agent concept that brings research, synthesis, and structured outputs into one workflow.",
-    stack: ["Python", "LangGraph", "OpenAI", "FastAPI"],
-  },
-  {
-    title: "Intelligent Workflow Assistant",
-    category: "AI automation",
-    description:
-      "A workflow concept exploring how LLMs can help automate repetitive business processes.",
-    stack: ["Python", "LangChain", "FastAPI", "Docker"],
-  },
-];
+export const revenueIntelligenceProject: Project = {
+  title: "Revenue Intelligence Agency & Baseline Recovery Tool",
+  category: "AI Engineering / Full Stack / GenAI",
+  description:
+    "An AI-augmented diagnostic engine that ingests GA4 session data to calculate traffic baselines and uses a bounded DeepSeek LLM layer to generate executive recovery reports.",
+  stack: ["Next.js", "TypeScript", "DeepSeek API", "Node.js", "GA4 Integration", "Tailwind CSS"],
+  demoUrl: "https://revenueintelligence.agency",
+  caseStudyUrl: "/projects/revenue-intelligence",
+  featured: true,
+};
+
+export const projects: Project[] = [revenueIntelligenceProject];

@@ -17,10 +17,13 @@ About page, and contact page are in place; dedicated skills and experience
 sections have not yet been built. Edit `app/about/page.tsx` to update the About
 story and `app/contact/page.tsx` to update contact details.
 
-Edit `data/projects.ts` to replace the example concepts with real projects and
-add their `demoUrl` and `githubUrl` links. Missing links are shown as coming
-soon. Replace `public/chido-ukaigwe-cv.pdf` to update the publicly downloadable
-CV.
+Edit `data/projects.ts` to update the featured Revenue Intelligence project,
+add projects, and set `demoUrl` and `githubUrl` links. Missing
+links are shown as coming soon. The featured project's GitHub URL is omitted
+until a real repository URL is available. Its case study is in
+`app/projects/revenue-intelligence/page.tsx`; the code snippet is illustrative
+pseudocode and the dashboard image is a placeholder. Replace
+`public/chido-ukaigwe-cv.pdf` to update the publicly downloadable CV.
 
 Theme tokens live in `tailwind.config.ts` and `app/globals.css`. Geist fonts
 are bundled locally through `next/font` in `app/layout.tsx`.
