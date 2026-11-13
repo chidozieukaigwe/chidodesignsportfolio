@@ -22,7 +22,8 @@ add projects, and set `demoUrl` and `githubUrl` links. Missing
 links are shown as coming soon. The featured project's GitHub URL is omitted
 until a real repository URL is available. Its case study is in
 `app/projects/revenue-intelligence/page.tsx`; the code snippet is illustrative
-pseudocode and the dashboard image is a placeholder. Replace
+pseudocode and the website screenshot is in
+`public/images/revenue-intelligence-agency-website.webp`. Replace
 `public/chido-ukaigwe-cv.pdf` to update the publicly downloadable CV.
 
 Theme tokens live in `tailwind.config.ts` and `app/globals.css`. Geist fonts

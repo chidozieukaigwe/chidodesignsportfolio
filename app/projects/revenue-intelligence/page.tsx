@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -6,7 +7,6 @@ import {
   ChartNoAxesCombined,
   CircleCheck,
   FileText,
-  Image as ImageIcon,
   Layers3,
   ShieldCheck,
   Workflow,
@@ -194,16 +194,21 @@ export default function RevenueIntelligencePage() {
         <section aria-labelledby="showcase-title" className="mx-auto max-w-7xl px-6 py-20 sm:py-28">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#ccff00]">05 / Visual showcase</p>
           <h2 id="showcase-title" className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            The dashboard.
+            The agency website.
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-7 text-slate-400">
-            A closer look at the diagnostic experience.
+            A look at the Revenue Intelligence Agency website.
           </p>
-          <div className="mt-10 flex min-h-72 flex-col items-center justify-center rounded-2xl border border-dashed border-slate-600 bg-slate-800/60 px-6 text-center sm:min-h-96">
-            <ImageIcon aria-hidden="true" className="text-slate-400" size={32} />
-            <p className="mt-4 text-sm font-medium text-slate-300">Dashboard screenshot placeholder</p>
-            <p className="mt-2 text-xs text-slate-400">A visual of the live tool can be added here.</p>
-          </div>
+          <figure className="mt-10 overflow-hidden rounded-2xl border border-white/10 bg-slate-900">
+            <Image
+              src="/images/revenue-intelligence-agency-website.webp"
+              alt="Revenue Intelligence Agency homepage featuring its publisher diagnostics and system map."
+              width={1478}
+              height={768}
+              sizes="(max-width: 1280px) calc(100vw - 48px), 1232px"
+              className="h-auto w-full"
+            />
+          </figure>
           <div className="mt-10 flex flex-wrap items-center gap-6">
             <a href={revenueIntelligenceProject.demoUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-[#ccff00] hover:text-white">
               <ChartNoAxesCombined aria-hidden="true" size={18} /> View Live Tool
