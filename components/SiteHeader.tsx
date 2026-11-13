@@ -3,13 +3,16 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function SiteHeader() {
   return (
-    <header className="flex min-h-20 items-center justify-between gap-4 border-b border-white/[0.07]">
+    <header className="flex min-h-20 flex-wrap items-center justify-between gap-4 border-b border-white/[0.07] py-4 sm:py-0">
       <Link href="/" className="shrink-0 text-sm font-semibold tracking-tight text-white">
         chido<span className="text-accent-blue">.</span>designs
       </Link>
-      <nav aria-label="Main navigation" className="flex items-center gap-3 sm:gap-8">
+      <nav aria-label="Main navigation" className="flex w-full flex-wrap items-center justify-between gap-3 sm:w-auto sm:justify-start sm:gap-8">
         <Link href="/about" className="text-sm text-slate-300 transition-colors hover:text-white">
           About
+        </Link>
+        <Link href="/experience" className="text-sm text-slate-300 transition-colors hover:text-white">
+          Experience
         </Link>
         <Link
           href="/#projects"

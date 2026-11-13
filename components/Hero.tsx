@@ -16,12 +16,14 @@ export default function Hero() {
             Building with intelligence
           </div>
           <h1 className="mt-8 text-balance text-4xl font-semibold leading-[1.12] tracking-[-0.045em] text-white sm:text-6xl lg:text-7xl">
-            AI Engineer &amp; Strategist{" "}
-            <span className="text-slate-400">| LLMs, RAG, &amp; AI-Augmented Development</span>
+            AI Engineer &amp; Strategist
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-400 sm:text-xl">
-            I bridge the gap between complex LLM architectures and
+            I&apos;m Chido. I bridge the gap between complex LLM architectures and
             production-ready business applications.
+          </p>
+          <p className="mt-4 text-sm text-slate-400">
+            LLMs, RAG &amp; AI-augmented development.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-3">
             <a

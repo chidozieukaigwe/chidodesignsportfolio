@@ -13,9 +13,10 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000). The hero, project cards,
-About page, and contact page are in place; dedicated skills and experience
-sections have not yet been built. Edit `app/about/page.tsx` to update the About
-story and `app/contact/page.tsx` to update contact details.
+About, Experience & Education, and contact pages are in place. Edit
+`app/about/page.tsx` to update the About story, `data/experience.ts` to update
+the shared timeline, `app/page.tsx` to update the skills groups, and
+`app/contact/page.tsx` to update contact details.
 
 Edit `data/projects.ts` to update the featured Revenue Intelligence project,
 add projects, and set `demoUrl` and `githubUrl` links. Missing
