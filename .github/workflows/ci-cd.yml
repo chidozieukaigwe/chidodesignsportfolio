@@ -44,5 +44,5 @@ jobs:
         run: node .github/scripts/deploy-render.mjs
         env:
           RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
-          RENDER_SERVICE_ID: ${{ vars.RENDER_SERVICE_ID }}
+          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID || vars.RENDER_SERVICE_ID }}
           DEPLOY_COMMIT: ${{ github.sha }}

@@ -60,10 +60,11 @@ Before enabling the deployment:
    `render.yaml` can trigger deploys outside CI. Initial provisioning, manual
    Blueprint syncs, and manual Render deploys remain outside this workflow.
 4. In GitHub repository **Settings → Secrets and variables → Actions**, add
-   `RENDER_API_KEY` as a repository secret and `RENDER_SERVICE_ID` as a
-   repository variable. Use the service ID (`srv-...`) from the Render
-   dashboard. Set the secret manually; the local `.env` file is not sent to
-   GitHub Actions or needed by the running site.
+   `RENDER_API_KEY` as a repository secret and `RENDER_SERVICE_ID` as either
+   a repository secret or variable. Use the service ID (`srv-...`) from the
+   Render dashboard. If both are set, the secret takes precedence. Set secrets
+   manually; the local `.env` file is not sent to GitHub Actions or needed by
+   the running site.
 5. Re-run the workflow from `main`, or push a new commit, and inspect the
    Actions run and Render deploy logs. If a deploy times out or Render queues
    it without a trackable ID, check the Render dashboard before retrying. Add
