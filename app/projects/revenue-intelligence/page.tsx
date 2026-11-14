@@ -12,6 +12,7 @@ import {
   Workflow,
 } from "lucide-react";
 import CodeBlock from "@/components/CodeBlock";
+import ProjectTechStack from "@/components/ProjectTechStack";
 import SiteHeader from "@/components/SiteHeader";
 import { revenueIntelligenceProject } from "@/data/projects";
 
@@ -100,13 +101,9 @@ export default function RevenueIntelligencePage() {
                 <span className="sr-only">(opens in a new tab)</span>
               </a>
             </div>
-            <ul aria-label="Technology stack" className="mt-10 flex flex-wrap gap-2">
-              {revenueIntelligenceProject.stack.map((item) => (
-                <li key={item} className="rounded-md border border-white/10 bg-white/[0.04] px-3 py-1.5 font-mono text-xs text-slate-300">
-                  {item}
-                </li>
-              ))}
-            </ul>
+            <div className="mt-10">
+              <ProjectTechStack groups={revenueIntelligenceProject.stack} />
+            </div>
           </section>
         </div>
       </div>

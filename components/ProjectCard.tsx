@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Boxes, CodeXml } from "lucide-react";
 import Link from "next/link";
+import ProjectTechStack from "@/components/ProjectTechStack";
 import type { Project } from "@/data/projects";
 
 type ProjectCardProps = {
@@ -42,16 +43,9 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {project.description}
       </p>
 
-      <ul className="mt-6 flex flex-wrap gap-2" aria-label="Technology stack">
-        {project.stack.map((technology) => (
-          <li
-            key={technology}
-            className="rounded-md border border-white/[0.07] bg-white/[0.04] px-2.5 py-1 font-mono text-xs text-slate-300"
-          >
-            {technology}
-          </li>
-        ))}
-      </ul>
+      <div className="mt-6">
+        <ProjectTechStack groups={project.stack} />
+      </div>
 
       <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 border-t border-white/10 pt-5">
         {project.caseStudyUrl && (
